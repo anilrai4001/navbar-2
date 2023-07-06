@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(17, 208, 233);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:350px){
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    a{
+        margin: 2px;
+    }
+}
